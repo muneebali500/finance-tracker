@@ -1,0 +1,202 @@
+h2 {
+  background-color: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: pink;
+  color: #fff;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+.budget-container {
+  min-height: 90vh;
+  width: 100rem;
+  max-width: 95%;
+  background-color: #7f54ce;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-row-gap: 1.5rem;
+  padding: 0.5rem 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.budget-container div {
+  border-color: pink;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.month {
+  grid-column: 5 / 7;
+  grid-row: 1 / 2;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 6rem;
+  border: 1px solid;
+}
+
+.balance-total {
+  grid-column: 4 / 8;
+  grid-row: 2 / 3;
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+
+.instruction {
+  position: absolute;
+  top: 24.5%;
+  left: 30%;
+  font-size: 1.4rem;
+  color: rgb(236, 225, 225);
+}
+
+.input-info {
+  margin-top: 1rem;
+  grid-column: 3 / 9;
+  grid-row: 3 / 4;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1rem;
+  border: 1px solid;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.input-info .input-text {
+  grid-column: 1 / 5;
+  height: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: transparent;
+  color: rgb(233, 219, 219);
+}
+
+.input-info .input-amount {
+  grid-column: 5 / 7;
+  border-left: 1px solid #fff;
+  font-size: 1.7rem;
+  padding: 1rem;
+  background-color: transparent;
+  color: rgb(233, 219, 219);
+}
+
+.input-info .input-text::placeholder,
+.input-info .input-amount::placeholder {
+  color: rgb(223, 192, 192);
+}
+
+.incExp-total-wrapper {
+  grid-column: 1 / 11;
+  grid-row: 4 / 5;
+}
+
+.incExp-summary-container {
+  grid-column: 1 / 11;
+  grid-row: 5 / 9;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.incExp-total-wrapper,
+.incExp-summary-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-total,
+.income-total,
+.expense-total,
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.balance-total {
+  border: 1px solid;
+}
+
+.income-total,
+.expense-total,
+.inc-summary,
+.exp-summary {
+  width: 45rem;
+  border: 1px solid;
+}
+
+.entry {
+  position: relative;
+  border-bottom: 1px solid;
+}
+
+.entry span {
+  font-size: 1.8rem;
+}
+
+.entry .delete-btn {
+  pointer-events: none;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.entry:hover .delete-btn {
+  pointer-events: all;
+  opacity: 1;
+}
+
+button {
+  position: absolute;
+  bottom: -1rem;
+  right: -1.8rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  background-color: pink;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+button.clear {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: 9rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+
+button.clear:active {
+  transform: scale(0.6);
+}
