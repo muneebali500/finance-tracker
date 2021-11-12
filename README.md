@@ -6,7 +6,7 @@ This is a Frontend Development project Designed and Developed by me using HTML, 
 
 [Link to Live Project](https://muneebali500.github.io/finance-tracker/)
 
-![Budget Landing Page](/incomify.jpg)
+![Budget Landing Page](/incomify1.jpg)
 
 ## Technologies Used
 
