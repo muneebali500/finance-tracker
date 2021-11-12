@@ -1,8 +1,8 @@
-# Testimonial Section
+# Finance Tracker Aapp
 
 ## Introduction
 
-This is a Frontend Development project Designed and Developed by me using HTML, CSS and mostly JavaScript. I have created this project to practice and showcase my Frontend skills. 
+This is a Frontend Development project Designed and Developed by me using HTML, CSS and mostly JavaScript. I have created this project to practice and showcase my Frontend skills. The project is about calculating income, expense and the remaining budget for the month. 
 
 [Link to Live Project](https://muneebali500.github.io/finance-tracker/)
 
