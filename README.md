@@ -1,8 +1,8 @@
-# Finance Tracker Aapp
+# Finance Tracker Aapp - Desktop View Only
 
 ## Introduction
 
-This is a Frontend Development project Designed and Developed by me using HTML, CSS and mostly JavaScript. I have created this project to practice and showcase my Frontend skills. The project is about calculating income, expense and the remaining budget for the month. 
+This is a Frontend Development project Designed and Developed by me using HTML, CSS and mostly JavaScript. I have created this project to practice and showcase my Frontend skills. The project is about calculating  the income, the expense and the remaining budget for the month. This is a Desktop based application and is not compatible for mobile viewers. 
 
 [Link to Live Project](https://muneebali500.github.io/finance-tracker/)
 
